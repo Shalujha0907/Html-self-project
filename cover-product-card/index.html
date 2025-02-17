@@ -13,6 +13,16 @@
         text-align: center;
       }
 
+      header {
+        width: 100%;
+        height: 60px;
+        position: sticky;
+        top: 0px;
+        bottom: 0px;
+        background-color: rgb(245, 245, 245);
+        border: 2.6px solid #182957;
+      }
+
       body {
         background-color: #2e4d6b;
       }
@@ -22,9 +32,9 @@
         height: 660px;
         background-color: var(--bg-color);
         border-radius: 40px;
-        margin: 4% auto;
+        margin: 3% auto;
         border: 4px solid #182957;
-        padding: 14px;
+        padding: 20px;
       }
 
       section > img {
@@ -117,12 +127,13 @@
       }
 
       #tax {
-        color: #06a585;
-        font-weight: 900;
         float: left;
-        border-right: 200px solid transparent;
         margin: 0;
+        font-weight: 900;
+        color: #06a585;
+        text-align: left;
         margin-bottom: 2px;
+        border-right: 240px solid transparent;
       }
 
       #size {
@@ -140,15 +151,15 @@
       #available-size {
         display: block;
         width: 80px;
-        font-family: sans-serif;
         color: #ff3e6c;
         font-size: 13px;
-        border-radius: 200px;
         font-weight: 800;
         margin-top: 90px;
         line-height: 30px;
-        border: 2px solid #ff3e6c;
+        border-radius: 200px;
         text-decoration: none;
+        font-family: sans-serif;
+        border: 2px solid #ff3e6c;
       }
 
       #add-to-bag {
@@ -160,27 +171,29 @@
         font-weight: 400;
         line-height: 40px;
         margin-top: 18px;
-        font-family: sans-serif;
+        text-decoration: none;
+        border-radius: 5px;
         background-color: #ff3e6c;
+        font-family: sans-serif;
         text-transform: uppercase;
         border: 2px solid transparent;
-        text-decoration: none;
       }
 
       #wishlist {
         float: left;
         width: 170px;
         height: 40px;
-        color: #000000b9;
         font-size: 16px;
         font-weight: 600;
         line-height: 40px;
         margin-top: 18px;
+        margin-left: 16px;
+        color: #000000b9;
+        text-decoration: none;
+        border-radius: 5px;
         font-family: sans-serif;
         text-transform: uppercase;
-        text-decoration: none;
         border: 1px solid #d3d5d9;
-        margin-left: 16px;
       }
 
       #wishlist:hover {
@@ -189,14 +202,101 @@
 
       #delivery {
         float: left;
-        margin-top: 26px;
-        margin-left: 26px;
+        color: #4076b0;
+        font-size: 14px;
+        font-weight: 540;
+        margin-top: 24px;
+        margin-left: 44px;
         text-transform: uppercase;
         text-decoration: none;
+      }
+
+      #mantra {
+        float: left;
+        margin: 16px;
+        display: block;
+        font-size: 22px;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+      .categories {
+        float: left;
+        margin: 14px;
+        margin-top: 20px;
+        display: block;
+        color: #000001;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+      #search-bar {
+        float: left;
+        width: 500px;
+        height: 20px;
+        margin: 12px;
+        color: #8c8e93;
+        display: block;
+        text-align: left;
+        padding: 8px 4px;
+        text-decoration: none;
+        background-color: #ecedef;
+      }
+
+      figure {
+        float: left;
+        margin: 10px;
+        font-size: 15px;
+        display: inline;
+        color: #000001;
+        font-weight: 600;
+        margin: 10px 18px;
+        font-family: sans-serif;
       }
     </style>
   </head>
   <body>
+    <header>
+      <nav>
+        <a href="#" id="mantra">yantra</a>
+        <a href="#" class="categories">men</a>
+        <a href="#" class="categories">women</a>
+        <a href="#" class="categories">kids</a>
+        <a href="#" class="categories">home & living</a>
+        <a href="#" class="categories">beauty</a>
+        <a href="#" class="categories">studio</a>
+        <a href="#" id="search-bar">
+          󠀠󠀠 󠀠󠀠 󠀠󠀠 󠀠󠀠🔍 󠀠󠀠 󠀠󠀠 󠀠󠀠 󠀠󠀠󠀠Search for products, brands and more
+        </a>
+        <a href="#">
+          <figure id="profile">
+            <img src="./image/profile-icon-removebg.png" alt="profile-image" />
+            <figcaption>Profile</figcaption>
+          </figure>
+        </a>
+
+        <a href="#">
+          <figure>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCmnLzISIMPOLfZsHTEj6wcvTNtnRDQoYRVQ&s"
+              alt="♡"
+            />
+            <figcaption>Wishlist</figcaption>
+          </figure>
+        </a>
+
+        <a href="#">
+          <figure>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqn_0We_rWll2PvlTYTnXV5DWxuPCMOLIdiA&s"
+              alt="👜 "
+            />
+            <figcaption>Bag</figcaption>
+          </figure>
+        </a>
+      </nav>
+    </header>
+
     <section>
       <img src="./image/cropped-phone-cover.png" alt="cover-image" />
       <div id="border"></div>
@@ -204,7 +304,7 @@
       <p>Solid Printed iPhone 13 Back Case Mobile Accessories</p>
 
       <div class="ratings-section">
-        <pre>3.9 <img src="./image/icons8-star-30.png" alt="star-image" /> <pre id="inner-pre">39 Ratings</pre></pre>
+        <pre>3.9 <img src="./image/icons8-star-30.png" alt="star-image" /><pre id="inner-pre">39 Ratings </pre></pre>
       </div>
 
       <em>
@@ -222,7 +322,7 @@
 
       <div>
         <a
-          href="./add-to-bag.html"
+          href="file:///Users/shalujha/workspace/html/new_stuffs/cover-product-card/add-to-bag.html"
           id="add-to-bag"
           >👜 add to bag</a
         >
